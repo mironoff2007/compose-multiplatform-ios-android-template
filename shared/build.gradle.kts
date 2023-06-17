@@ -7,7 +7,7 @@ plugins {
 
 kotlin {
     android()
-
+    jvm("desktop")
     iosX64()
     iosArm64()
     iosSimulatorArm64()
@@ -41,6 +41,16 @@ kotlin {
                 api("androidx.appcompat:appcompat:1.6.1")
                 api("androidx.core:core-ktx:1.9.0")
             }
+        }
+        val desktopMain by getting {
+            dependencies {
+                api(compose.preview)
+                }
+        }
+        val desktopTest by getting {
+            dependencies {
+                implementation("junit:junit:4.13.2")
+                }
         }
         val iosX64Main by getting
         val iosArm64Main by getting
