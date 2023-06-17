@@ -47,11 +47,7 @@ kotlin {
                 api(compose.preview)
                 }
         }
-        val desktopTest by getting {
-            dependencies {
-                implementation("junit:junit:4.13.2")
-                }
-        }
+
         val iosX64Main by getting
         val iosArm64Main by getting
         val iosSimulatorArm64Main by getting
