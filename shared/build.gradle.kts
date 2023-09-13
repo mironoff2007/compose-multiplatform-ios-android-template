@@ -6,6 +6,7 @@ plugins {
 
 kotlin {
     androidTarget()
+    jvm("desktop")
 
     listOf(
         iosX64(),
